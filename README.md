@@ -62,10 +62,9 @@ Below is the explanation of the assignment that I have completed:
 
    Decryption Calculation:
    Next, we apply the decryption formula of the Affine Cipher for each character:
-
+   The modular inverse of a (3) modulo m (26) is 9 (denoted as a_inv), because 3×9 mod 26 = 1
+   
    - For 'I' (numeric value 8):
-     𝐷(8) = 3^−1(8−5) mod 26
-     The modular inverse of a (3) modulo m (26) is 9 (denoted as a_inv), because 3×9 mod 26 = 1
      𝐷(8) = 3^−1(8−5) mod 26
      𝐷(8) = 1 (B)
 
