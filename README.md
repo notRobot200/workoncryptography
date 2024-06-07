@@ -29,14 +29,17 @@ Below is the explanation of the assignment that I have completed:
 
    Next, apply the Affine Cipher encryption formula for each character:
 
-   For 'B' (numeric value 1):
-   𝐸(1) = (3*1 + 5) mod 26 = 8 -> 'I'
-   For 'o' (numeric value 14):
-   𝐸(14) = (3*14 + 5) mod 26 = 21 -> 'v'
-   For 'g' (numeric value 6):
-   𝐸(6) = (3*6 + 5) mod 26 = 23 -> 'x'
-   For 'i' (numeric value 8):
-   𝐸(8) = (3*8 + 5) mod 26 = 3 -> 'd'
+   - For 'B' (numeric value 1):
+     𝐸(1) = (3*1 + 5) mod 26 = 8 -> 'I'
+     
+   - For 'o' (numeric value 14):
+     𝐸(14) = (3*14 + 5) mod 26 = 21 -> 'v'
+     
+   - For 'g' (numeric value 6):
+     𝐸(6) = (3*6 + 5) mod 26 = 23 -> 'x'
+     
+   - For 'i' (numeric value 8):
+     𝐸(8) = (3*8 + 5) mod 26 = 3 -> 'd'
 
    So, the encrypted result of "Bogi" is "Ivxd".
 
@@ -60,28 +63,23 @@ Below is the explanation of the assignment that I have completed:
    Decryption Calculation:
    Next, we apply the decryption formula of the Affine Cipher for each character:
 
-   For 'I' (numeric value 8):
+   - For 'I' (numeric value 8):
+     𝐷(8) = 3^−1(8−5) mod 26
+     The modular inverse of a (3) modulo m (26) is 9 (denoted as a_inv), because 3×9 mod 26 = 1
+     𝐷(8) = 3^−1(8−5) mod 26
+     𝐷(8) = 1 (B)
 
-   𝐷(8) = 3^−1(8−5) mod 26
-   The modular inverse of a (3) modulo m (26) is 9 (denoted as a_inv), because 3×9 mod 26 = 1
+   - For 'v' (numeric value 21):
+     𝐷(21) = 3^−1(21−5) mod 26
+     𝐷(21) = 14 (o)
 
-   𝐷(8) = 3^−1(8−5) mod 26
-   𝐷(8) = 1 (B)
+   - For 'x' (numeric value 23):
+     𝐷(23) = 3^−1(23−5) mod 26
+     𝐷(23) = 6 (g)
 
-   For 'v' (numeric value 21):
-
-   𝐷(21) = 3^−1(21−5) mod 26
-   𝐷(21) = 14 (o)
-
-   For 'x' (numeric value 23):
-
-   𝐷(23) = 3^−1(23−5) mod 26
-   𝐷(23) = 6 (g)
-
-   For 'd' (numeric value 3):
-
-   𝐷(3) = 3^−1(3−5) mod 26
-   𝐷(3) = 8 (i)
+   - For 'd' (numeric value 3):
+     𝐷(3) = 3^−1(3−5) mod 26
+     𝐷(3) = 8 (i)
 
    So, the message "Ivxd" is successfully decrypted into "Bogi".
 
