@@ -8,11 +8,11 @@ E(x) = (ax + b) mod m
 
 where:
 
-E(x) is the encrypted character.
-x is the numerical value of the original text character (starting from A=0, B=1, and so on).
-a and b are the cipher keys (the value of a and the value of b can be freely set by the creator).
-a must be chosen in such a way that it does not have any common factors with m (the number of letters in the alphabet).
-m is the number of letters in the alphabet (26 for the English alphabet).
+- E(x) is the encrypted character.
+- x is the numerical value of the original text character (starting from A=0, B=1, and so on).
+- a and b are the cipher keys (the value of a and the value of b can be freely set by the creator).
+- a must be chosen in such a way that it does not have any common factors with m (the number of letters in the alphabet).
+- m is the number of letters in the alphabet (26 for the English alphabet).
 
 Below is the explanation of the assignment that I have completed:
 
